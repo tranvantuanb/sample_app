@@ -21,3 +21,54 @@
 
 en:
   hello: "Hello world"
+
+  users:
+    new:
+      signup: "Sign up"
+      signup_welcome: "This will be a signup page for new users."
+
+  static_page:
+    help:
+      get_help: "Get help on the Ruby on Rails Tutorial at the"
+      to_get_help: "To get help on this sample app, see the"
+      rails_help: "Rails Tutorial help section"
+      help: "Help"
+      rails_book: "Ruby on Rails Tutorial"
+    home:
+      welcome_homepage: "This is the home page for the"
+      welcome_sampleapp: "Welcome to the Sample App"
+      rails_book: "Ruby on Rails Tutorial"
+      sign_up_now: "Sign up now!"
+      sample: "sample application."
+    about:
+        about: "About"
+        ruby: "Ruby on Rails Tutorial"
+        book: "book"
+        screencast_series: "screencast series"
+        ruby_on_rails: "Ruby on Rails"
+        to_teach: "to teach web development with"
+        about_description: "This is the sample application for the tutorial."
+        the: "The"
+        is_a: "is a"
+        and: "and"
+    contact:
+      contact: "Contact"
+      contact_welcome: "Contact the Ruby on Rails Tutorial about
+        the sample app at the"
+      contact_page: "contact page"
+
+  layouts:
+    header:
+      sample_app: "sample app"
+      home: "Home"
+      help: "Help"
+      login: "Log in"
+    footer:
+      news: "News"
+      contact: "Contact"
+      about: "About"
+      rails_book: "Ruby on Rails Tutorial"
+      searched_by: "searched by"
+      google: "Google"
+      the: "The"
+
