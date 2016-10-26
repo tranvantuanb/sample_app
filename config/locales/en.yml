@@ -22,10 +22,17 @@
 en:
   hello: "Hello world"
 
+  shared:
+    error_messages:
+      the_form_contains: "The form contains"
+
   users:
+    create:
+      welcome_new_user: "Welcome to the Sample App!"
     new:
       sign_up: "Sign up"
       signup_welcome: "This will be a signup page for new users."
+      create_my_account: "Create my account"
 
   static_page:
     help:
@@ -71,4 +78,3 @@ en:
       searched_by: "searched by"
       google: "Google"
       the: "The"
-
