@@ -1,9 +1,7 @@
 class UsersController < ApplicationController
   def show
-    @user = User.find_by(id: params[:id])
-    if !@user.present?
-      render file: "#{Rails.root}/public/404.html", layout: false, status: 404
-    end
+    @user = User.find_by id: params[:id]
+    render_404 unless @user
   end
 
   def new
@@ -13,6 +11,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
+      log_in @user
       flash[:success] = t ".welcome_new_user"
       redirect_to @user
     else
