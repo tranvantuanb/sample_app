@@ -24,7 +24,7 @@ en:
 
   users:
     new:
-      signup: "Sign up"
+      sign_up: "Sign up"
       signup_welcome: "This will be a signup page for new users."
 
   static_page:
