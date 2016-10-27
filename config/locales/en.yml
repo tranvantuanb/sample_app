@@ -20,10 +20,10 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
   sessions:
     new:
       log_in: "Log in"
+      remember: "Remember me on this computer"
       sign_up_now: "Sign up now!"
       new_user: "New user?"
     create:
@@ -89,3 +89,5 @@ en:
       searched_by: "searched by"
       google: "Google"
       the: "The"
+    application:
+      ruby_sample_app: "Ruby on Rails Tutorial Sample App"
