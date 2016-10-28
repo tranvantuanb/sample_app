@@ -6,7 +6,8 @@ class UsersController < ApplicationController
 
   def index
     @users = User.select(:name, :email, :id)
-      .paginate(page: params[:page], per_page: Settings.page_size).order "name ASC"
+      .paginate(page: params[:page], per_page: Settings.page_size)
+      .order t ".order"
   end
 
   def show
@@ -19,9 +20,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t ".welcome_new_user"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".please_check_email"
+      redirect_to root_url
     else
       render :new
     end
