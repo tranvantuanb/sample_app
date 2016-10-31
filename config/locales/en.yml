@@ -26,6 +26,7 @@ en:
       remember: "Remember me on this computer"
       sign_up_now: "Sign up now!"
       new_user: "New user?"
+      forgot_password: "(forgot password)"
     create:
       invalid: "Invalid email/password combination"
       check_your_email: "Check your email for the activation link."
@@ -123,3 +124,19 @@ en:
     sample_app: "Sample App"
     account_activation: "Account activation"
     to: "to@example.org"
+
+  password_resets:
+    new:
+      forgot_password: "Forgot password"
+      submit: "Submit"
+    create:
+      email_sent: "Email sent with password reset instructions"
+      email_address: "Email address not found"
+      password_reset: "Password reset"
+      to_reset: "To reset your password click the link below:"
+      reset_password: "Reset password"
+      expire_link: "This link will expire in two hours."
+      if_you: "If you did not request your password to be reset,
+      please ignore this email and your password will stay as it is."
+
+  reset_password: "Reset password"
