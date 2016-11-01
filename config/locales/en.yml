@@ -35,6 +35,12 @@ en:
   shared:
     error_messages:
       the_form_contains: "The form contains"
+    user_info:
+      view_my_profile: "View my profile"
+      micropost: "micropost"
+    micropost_form:
+      compose_new_micropost: "Compose new micropost..."
+      post: "Post"
 
   users:
     create:
@@ -140,3 +146,13 @@ en:
       please ignore this email and your password will stay as it is."
 
   reset_password: "Reset password"
+
+  microposts:
+    create:
+      micropost_created: "Micropost created!"
+    micropost:
+      you_sure: "You sure?"
+    destroy:
+      micropost_deleted: "Micropost deleted!"
+  should_be: "Should be less than 5MB"
+  micropost_feed: "Micropost Feed"

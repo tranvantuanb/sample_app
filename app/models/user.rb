@@ -1,14 +1,16 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   attr_accessor :remember_token, :activation_token, :reset_token
-  before_save   :downcase_email
+  before_save :downcase_email
   before_create :create_activation_digest
-  validates :name , presence: true, length: {maximum: 50}
+  validates :name , presence: true, length: {maximum: Settings.name_size_max}
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
-  validates :email, presence: true, length: {maximum: 255},
+  validates :email, presence: true, length: {maximum: Settings.email_length},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
 
   has_secure_password
-  validates :password, presence: true, length: {minimum: 6}, allow_nil: true
+  validates :password, presence: true, length: {minimum: Settings.password_min},
+    allow_nil: true
 
   class << self
     def digest string
@@ -56,7 +58,11 @@ class User < ApplicationRecord
   end
 
   def password_reset_expired?
-    reset_sent_at < 2.hours.ago
+    reset_sent_at < Settings.password_expired.hours.ago
+  end
+
+  def feed
+    Micropost.where "user_id = ?", id
   end
 
   private
