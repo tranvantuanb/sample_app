@@ -6,3 +6,5 @@ name_size_max: 50
 email_length: 255
 password_min: 6
 password_expired: 2
+content_length: 140
+pic_size: 400
