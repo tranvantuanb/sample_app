@@ -8,3 +8,4 @@ password_min: 6
 password_expired: 2
 content_length: 140
 pic_size: 400
+gravatar_for: 30

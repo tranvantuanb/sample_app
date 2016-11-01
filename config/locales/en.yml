@@ -41,7 +41,9 @@ en:
     micropost_form:
       compose_new_micropost: "Compose new micropost..."
       post: "Post"
-
+    stats:
+      following: "Following"
+      followers: "Followers"
   users:
     create:
       welcome_new_user: "Welcome to the Sample App!"
@@ -68,6 +70,14 @@ en:
       delete: "delete"
     destroy:
       user_deleted: "User deleted"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    following:
+      following: "Followig"
+    followers:
+      followers: "Followers"
 
   static_page:
     help:
